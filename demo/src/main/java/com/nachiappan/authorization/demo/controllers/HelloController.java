@@ -13,6 +13,11 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(){
-        return helloService.getOutput();
+        return helloService.getHello();
+    }
+
+    @GetMapping("/world")
+    public String world(){
+        return helloService.getWorld();
     }
 }

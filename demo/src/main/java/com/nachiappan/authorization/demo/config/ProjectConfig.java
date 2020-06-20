@@ -35,3 +35,4 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/**").authenticated();
     }
 }
+
