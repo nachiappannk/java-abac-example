@@ -1,11 +1,12 @@
-package com.nachiappan.authorization.demo.permissions;
+package com.nachiappan.authorization.demo.roles;
 
+import com.nachiappan.authorization.demo.roles.RolesManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 @Configuration
 public class RolesManagerFactory {
+    //TODO: Have to find a way to define initialization. That gets run after the beans are registered
 
     public final String PATIENT_ROLE = "patient";
     public final String PROFESSIONAL_USER_L1_ROLE = "professional_l1";

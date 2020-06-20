@@ -1,6 +1,5 @@
-package com.nachiappan.authorization.demo.permissions;
+package com.nachiappan.authorization.demo.roles;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
