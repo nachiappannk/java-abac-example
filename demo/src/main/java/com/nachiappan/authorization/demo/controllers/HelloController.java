@@ -18,6 +18,11 @@ public class HelloController {
 
     @GetMapping("/world")
     public String world(){
-        return helloService.getWorld();
+        return helloService.getWorld(6);
+    }
+
+    @GetMapping("/world-new")
+    public String worldNew(){
+        return helloService.getWorld(10);
     }
 }

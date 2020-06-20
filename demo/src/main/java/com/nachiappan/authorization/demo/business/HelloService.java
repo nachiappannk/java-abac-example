@@ -10,8 +10,8 @@ public class HelloService {
         return "hello";
     }
 
-    @PreAuthorize("@accessPolicyEnforcer.isAccessible()")
-    public String getWorld() {
-        return "world";
+    @PreAuthorize("@accessPolicyEnforcer.isAccessible(#input)")
+    public String getWorld(int input) {
+        return "world"+input;
     }
 }
